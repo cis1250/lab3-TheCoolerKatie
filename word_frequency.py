@@ -34,4 +34,9 @@ user_sentence = input("Enter a sentence: ")
 while (is_sentence(user_sentence) == False):
     print("This does not meet the criteria for a sentence.")
     user_input = input("Enter a sentence: ")
-    
+
+user_sentence = str.lower(user_sentence)
+words = user_sentence.split()
+
+for i in words:
+    print (i + " " + str(user_sentence.count(i)))
